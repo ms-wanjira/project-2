@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+[class^='box-']{
+    background-color: rgb(0, 255, 255);
+    /* display: grid; */
+    place-items: center;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    gap: 20px;
+    /* grid-template-columns: repeat(4,1fr); */
+    /* grid-template-rows: repeat(4,1fr); */
+     /* grid-template-areas:
+    'A A A A A A A A A A A A'
+    'B B B B B B B B B B C C'
+    'C C C C C C C C C D D D'
+    'D D D D D D D D D D D D'
+     ;
+     grid-template-areas: 'A A A A A A A A A A A A'
+     'B B B B B B B B B B C C'
+     'C C C C C C C C C D D D'
+     'D D D D D D D D D D D D' ;  */
+     grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+}
+
+ .box-1{
+     grid-column: span 13;
+    grid-row: span 5;
+    
+}
+
+.box-2{
+    grid-column: span 4;
+    grid-row: span 5;
+
+}
+
+.box-3{
+    grid-column: span 4;
+    grid-row: span 5;
+}
+
+.box-4{
+    grid-column: span 4;
+    grid-row: span 5;
+} 
+.box-5{
+    grid-column: span 13;
+    grid-row: span 5;
+}
+.box-6{
+    grid-column: span 6;
+    grid-row:span 5;
+}
+.box-7{
+    grid-column: span 7;
+    grid-row: span 5;
+}
